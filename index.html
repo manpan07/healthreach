@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>康加復康服務 Health Reach Rehabilitation Service | 專業上門復康治療 · 患者與術後復康首選</title>
+  <meta name="description" content="康加復康服務提供專業上門復康服務裝，專注於中風後及大病初癒人士復康、手術後復康及長者物理治療. 由註冊治療師到診，免除往返醫院辛勞. 立即 WhatsApp 6717 2328 預約.">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700&display=swap" rel="stylesheet">
+   <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+      tailwind.config = {
+          theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            rose: '#B5838D', // Dusty Rose
+                            taupe: '#6D6875', // Warm Taupe
+                            light: '#FAF7F5', // Off-white
+                            dark: '#4A464F'
+                        }
+                    }
+                }
+          }
+       }
+  </script>
+  <style>
+      body { font-family: 'Noto Sans TC', sans-serif; }
+      .hero-clean { 
+          background-color: #FAF7F5;
+      }
+      .float-whatsapp { animation: pulse 2s infinite; }
+      @keyframes pulse { 
+          0% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.4); }
+          70% { box-shadow: 0 0 0 15px rgba(37, 211, 102, 0); } 
+          100% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0); } 
+      }
+      .fade-in-up { animation: fadeInUp 0.8s ease-out forwards; }
+      @keyframes fadeInUp { 
+          from { opacity: 0; transform: translateY(20px); } 
+          to { opacity: 1; transform: translateY(0); } 
+      }
+      .step-line::after { 
+          content: ''; 
+          position: absolute; 
+          top: 50%; 
+          right: -50%; 
+          width: 100%; 
+          height: 2px; 
+          background: #B5838D; 
+          opacity: 0.2; 
+          z-index: -1; 
+      }
+      @media (max-width: 768px) { .step-line::after { display: none; } }
+      
+      /* 優化滾動偏移，避免導航欄遮擋標題 */
+      html {
+        scroll-behavior: smooth;
+      }
+      section {
+        scroll-margin-top: 5rem;
+      }
+  </style>
+</head>
+<body class="bg-brand-light text-brand-dark overflow-x-hidden">
+ 
+  <!-- Navigation -->
+  <nav class="fixed w-full z-50 bg-brand-light/90 backdrop-blur-md border-b border-gray-100">
+      <div class="max-w-7xl mx-auto px-6 h-20 flex justify-between items-center">
+          <div class="flex items-center gap-3">
+                <div class="flex flex-col">
+                    <span class="text-xl font-bold tracking-tight text-brand-rose">康加復康服務</span>
+                    <span class="text-[10px] md:text-xs uppercase tracking-widest text-brand-taupe">Health Reach Rehabilitation Service</span>
+                </div>
+          </div>
+          <div class="hidden md:flex items-center gap-8 font-medium">
+                <a href="#home" class="hover:text-brand-rose transition-colors">主頁</a>
+                <a href="#advantage" class="hover:text-brand-rose transition-colors">服務內容</a>
+                <a href="#target" class="hover:text-brand-rose transition-colors">適合對象</a>
+                <a href="#process" class="hover:text-brand-rose transition-colors">聯絡我們</a>
+                <a href="https://wa.me/85267172328" target="_blank" class="bg-brand-rose text-white px-6 py-2.5 rounded-full hover:bg-opacity-90 transition-all shadow-sm flex items-center gap-2">
+                    <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+                    WhatsApp 6717 2328
+                </a>
+          </div>
+      </div>
+  </nav>
+ 
+  <!-- 主頁範圍: 由 "專業復康治療..." 至 "將體力留給最重要的復康運動" -->
+  <header id="home" class="hero-clean pt-44 pb-12 px-6">
+      <div class="max-w-7xl mx-auto flex flex-col items-center text-center">
+          <div class="fade-in-up w-full max-w-3xl mb-24">
+                <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-brand-dark leading-tight mb-6">
+                    專業復康治療，<br><span class="text-brand-rose underline decoration-brand-rose/20 underline-offset-8">直接送達家中.</span>
+                </h1>
+                <p class="text-lg text-brand-taupe mb-10 leading-relaxed mx-auto max-w-lg">
+                    康加提供專業上門復康服務，讓您無需受舟車勞頓之苦. 在您最安心、最熟悉的環境下重拾活動能力.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                    <div class="px-8 py-4 bg-transparent text-brand-dark font-bold text-center flex items-center justify-center gap-2 cursor-default">
+                        <span>立即</span>
+                        <svg class="w-5 h-5 fill-brand-rose" viewBox="0 0 24 24"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
+                       <span>致電或</span>
+                        <svg class="w-5 h-5 fill-[#25D366]" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+                        <span>whatsapp預約評估</span>
+                    </div>
+                </div>
+          </div>
+
+          <!-- 移至主頁範圍內的優勢區塊 -->
+          <div class="w-full max-w-7xl px-6 pb-12">
+              <div class="text-center mb-16">
+                   <h2 class="text-3xl md:text-4xl font-bold mb-4">為什麼選擇上門復康治療？</h2>
+                    <p class="text-brand-taupe">復康本應是一段專注而安全的過程，不應因距離問題而為身體與心靈增添額外的折騰.</p>
+              </div>
+              <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+                   <div class="text-center group">
+                        <div class="w-20 h-20 bg-brand-rose/10 rounded-full flex items-center justify-center text-4xl mx-auto mb-6 group-hover:bg-brand-rose group-hover:text-white transition-all duration-300">🛡️</div>
+                        <h3 class="text-xl font-bold mb-4">更高安全性</h3>
+                        <p class="text-brand-taupe leading-relaxed">避免患者在往返診所途中發生二次受傷或跌倒風險，尤其適合步履不穩的人士.</p>
+                    </div>
+                    <div class="text-center group">
+                       <div class="w-20 h-20 bg-brand-rose/10 rounded-full flex items-center justify-center text-4xl mx-auto mb-6 group-hover:bg-brand-rose group-hover:text-white transition-all duration-300">🛋️</div>
+                        <h3 class="text-xl font-bold mb-4">極致便利性</h3>
+                        <p class="text-brand-taupe leading-relaxed">物理治療師配合您的作息時間上門，無需花費數小時等待交通或在診所排隊.</p>
+                    </div>
+                    <div class="text-center group">
+                        <div class="w-20 h-20 bg-brand-rose/10 rounded-full flex items-center justify-center text-4xl mx-auto mb-6 group-hover:bg-brand-rose group-hover:text-white transition-all duration-300">🚶</div>
+                        <h3 class="text-xl font-bold mb-4">減少舟車勞頓</h3>
+                        <p class="text-brand-taupe leading-relaxed">對於術後初期或行動不便者，省去折騰上落車的痛苦，將體力留給最重要的復康運動.</p>
+                    </div>
+              </div>
+          </div>
+      </div>
+  </header>
+ 
+  <!-- 服務內容範圍: 由 "服務內容包括以下....." 開始 -->
+  <section id="advantage" class="py-24 bg-white">
+      <div class="max-w-7xl mx-auto px-6">
+          <div class="bg-brand-light/50 rounded-3xl p-8 md:p-12 border border-brand-rose/10">
+                <h3 class="text-3xl md:text-4xl font-bold mb-12 text-center text-brand-dark">服務內容包括以下</h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+                    <div class="space-y-6">
+                        <div class="flex items-center gap-3">
+                            <span class="w-10 h-10 bg-brand-rose text-white rounded-lg flex items-center justify-center font-bold">一</span>
+                            <h4 class="text-xl font-bold">上門物理治療</h4>
+                        </div>
+                        <ul class="space-y-3 pl-4">
+                            <li class="flex items-center gap-3 text-brand-taupe"><span class="w-1.5 h-1.5 bg-brand-rose rounded-full"></span> 痛症管理</li>
+                            <li class="flex items-center gap-3 text-brand-taupe"><span class="w-1.5 h-1.5 bg-brand-rose rounded-full"></span> 長者防跌/功能強化</li>
+                            <li class="flex items-center gap-3 text-brand-taupe"><span class="w-1.5 h-1.5 bg-brand-rose rounded-full"></span> 手術後復康（如：髖/膝關節置換手術）</li>
+                            <li class="flex items-center gap-3 text-brand-taupe"><span class="w-1.5 h-1.5 bg-brand-rose rounded-full"></span> 骨折後復康</li>
+                            <li class="flex items-center gap-3 text-brand-taupe"><span class="w-1.5 h-1.5 bg-brand-rose rounded-full"></span> 中風後復康</li>
+                            <li class="flex items-center gap-3 text-brand-taupe"><span class="w-1.5 h-1.5 bg-brand-rose rounded-full"></span> 臥床者復康</li>
+                            <li class="flex items-center gap-3 text-brand-taupe"><span class="w-1.5 h-1.5 bg-brand-rose rounded-full"></span> 照顧者技巧培訓</li>
+                            <li class="flex items-center gap-3 text-brand-taupe"><span class="w-1.5 h-1.5 bg-brand-rose rounded-full"></span> 復康用品使用諮詢</li>
+                        </ul>
+                    </div>
+                    <div class="space-y-6">
+                        <div class="flex items-center gap-3">
+                            <span class="w-10 h-10 bg-brand-rose text-white rounded-lg flex items-center justify-center font-bold">二</span>
+                            <h4 class="text-xl font-bold">機構服務</h4>
+                        </div>
+                        <ul class="space-y-4 pl-4">
+                            <li class="flex items-start gap-3 text-brand-taupe">
+                                <span class="w-1.5 h-1.5 bg-brand-taupe rounded-full mt-2 flex-shrink-0"></span> 
+                                <span>講座（如：痛症管理講座、防跌講座）</span>
+                            </li>
+                            <li class="flex items-start gap-3 text-brand-taupe">
+                                <span class="w-1.5 h-1.5 bg-brand-taupe rounded-full mt-2 flex-shrink-0"></span> 
+                                <span>提供機構/家居個別物理治療服務</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+          </div>
+      </div>
+  </section>
+ 
+  <!-- 適合對象 -->
+  <section id="target" class="py-24 bg-brand-light">
+      <div class="max-w-7xl mx-auto px-6">
+          <div class="flex flex-col items-center">
+                <div class="w-full max-w-3xl">
+                    <h2 class="text-3xl md:text-4xl font-bold mb-8 leading-tight text-center">誰最需要我們的<br>上門服務？</h2>
+                    <div class="space-y-4">
+                        <div class="flex items-start gap-4 p-4 bg-white rounded-2xl shadow-sm border-l-4 border-brand-rose">
+                            <span class="text-xl">👴</span>
+                             <div>
+                                <h4 class="font-bold">長者</h4>
+                                <p class="text-sm text-brand-taupe">體弱或不便出門，需在家中維持日常活動能力.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-4 p-4 bg-white rounded-2xl shadow-sm border-l-4 border-brand-rose">
+                            <span class="text-xl">🩹</span>
+                            <div>
+                              <h4 class="font-bold">手術前後</h4>
+                                <p class="text-sm text-brand-taupe">如髖或膝關節置換手術前準備及手術後復康、骨折後復康.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-4 p-4 bg-white rounded-2xl shadow-sm border-l-4 border-brand-rose">
+                            <span class="text-xl">🧠</span>
+                            <div>
+                                <h4 class="font-bold">中風後/大病初癒人士</h4>
+                              <p class="text-sm text-brand-taupe">如中風後或剛出院，體力尚虛弱，急需黃金期復康.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-4 p-4 bg-white rounded-2xl shadow-sm border-l-4 border-brand-rose">
+                            <span class="text-xl">♿</span>
+                            <div>
+                                <h4 class="font-bold">臥床或輪椅使用者</h4>
+                                <p class="text-sm text-brand-taupe">交通接送極度困難，專業物理治療師可直接於家中訓練.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-4 p-4 bg-white rounded-2xl shadow-sm border-l-4 border-brand-rose">
+                            <span class="text-xl">🏠</span>
+                            <div>
+                                <h4 class="font-bold">不便到診所的照顧者</h4>
+                                <p class="text-sm text-brand-taupe">因照顧長者或幼童，難以抽身前往診所.</p>
+                            </div>
+                         </div>
+                    </div>
+                </div>
+          </div>
+      </div>
+  </section>
+ 
+  <!-- 服務流程 -->
+  <section id="process" class="py-24 bg-white">
+      <div class="max-w-7xl mx-auto px-6">
+          <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">專業服務流程</h2>
+                <p class="text-brand-taupe">只需四個簡單步驟，開啟您的康復旅程</p>
+          </div>
+          <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div class="text-center relative">
+                    <div class="w-16 h-16 bg-brand-rose text-white rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-6 step-line">1</div>
+                    <h4 class="font-bold mb-2">預約諮詢</h4>
+                    <p class="text-sm text-brand-taupe">致電或 WhatsApp 提供簡單病歷，安排預約.</p>
+                </div>
+                <div class="text-center relative">
+                    <div class="w-16 h-16 bg-brand-rose text-white rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-6 step-line">2</div>
+                    <h4 class="font-bold mb-2">上門評估</h4>
+                   <p class="text-sm text-brand-taupe">物理治療師到府詳細檢查，制定個人化目標.</p>
+                </div>
+                <div class="text-center relative">
+                    <div class="w-16 h-16 bg-brand-rose text-white rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-6 step-line">3</div>
+                    <h4 class="font-bold mb-2">正式治療</h4>
+                    <p class="text-sm text-brand-taupe">專業手法、儀器輔助及針對性運動練習.</p>
+                </div>
+                <div class="text-center">
+                    <div class="w-16 h-16 bg-brand-rose text-white rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-6">4</div>
+                    <h4 class="font-bold mb-2">定期進度跟進</h4>
+                    <p class="text-sm text-brand-taupe">根據復原狀況調整計劃，指導家屬日常護理.</p>
+                </div>
+          </div>
+          
+          <!-- 聯絡我們 -->
+          <div class="mt-16 text-center">
+                <div class="inline-flex flex-col items-center gap-3 bg-white p-8 rounded-3xl shadow-sm border border-brand-rose/10 min-w-[320px]">
+                    <span class="text-2xl font-bold text-brand-dark mb-2">立即預約首診評估</span>
+                    
+                    <div class="flex items-center gap-3 text-lg font-medium text-brand-taupe">
+                        <svg class="w-5 h-5 fill-brand-rose" viewBox="0 0 24 24"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
+                        <span>電話 : 6717 2328</span>
+                    </div>
+
+                    <div class="flex items-center gap-3 text-lg font-medium text-brand-taupe">
+                        <svg class="w-5 h-5 fill-[#25D366]" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+                        <span>WhatsApp : 6717 2328</span>
+                    </div>
+
+                    <div class="flex items-center gap-3 text-lg font-medium text-brand-taupe">
+                        <svg class="w-5 h-5 stroke-brand-taupe fill-none" viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
+                        <span>Email : info@healthreachrs.hk</span>
+                    </div>
+                </div>
+          </div>
+      </div>
+  </section>
+ 
+  <!-- Footer -->
+  <footer class="bg-brand-dark text-white pt-24 pb-12 px-6">
+      <div class="max-w-7xl mx-auto">
+          <div class="grid grid-cols-1 md:grid-cols-4 gap-12 mb-16 border-b border-white/10 pb-12">
+               <div class="md:col-span-2">
+                    <div class="flex flex-col gap-1 mb-6">
+                        <span class="text-xl font-bold tracking-tight">康加復康服務</span>
+                        <span class="text-sm text-white/50 tracking-wider">Health Reach Rehabilitation Service</span>
+                    </div>
+                    <p class="text-white/60 max-w-sm leading-relaxed">
+                        我們註冊物理治療師團隊走遍香港各區，旨在為行動不便的長者及患者提供細緻、可靠的到戶康復服務.
+                    </p>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-6">快速連結</h4>
+                    <ul class="space-y-4 text-white/60">
+                        <li><a href="#home" class="hover:text-brand-rose transition-colors">主頁</a></li>
+                        <li><a href="#advantage" class="hover:text-brand-rose transition-colors">服務內容</a></li>
+                        <li><a href="#target" class="hover:text-brand-rose transition-colors">適合對象</a></li>
+                        <li><a href="#process" class="hover:text-brand-rose transition-colors">聯絡我們</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-6">聯絡我們</h4>
+                    <ul class="space-y-4 text-white/60">
+                        <li class="flex items-center gap-2">電話: 6717 2328</li>
+                        <li class="flex items-center gap-2">WhatsApp: 6717 2328</li>
+                        <li class="flex items-center gap-2">Email: info@healthreachrs.hk</li>
+                    </ul>
+                </div>
+          </div>
+          <div class="text-center text-white/40 text-sm">
+                <p>© 2026 康加復康服務 Health Reach Rehabilitation Service</p>
+          </div>
+      </div>
+  </footer>
+ 
+  <!-- Floating WhatsApp -->
+  <a href="https://wa.me/85267172328" target="_blank" class="fixed bottom-8 right-8 w-16 h-16 bg-[#25D366] text-white rounded-full flex items-center justify-center text-3xl shadow-2xl z-[100] float-whatsapp">
+      <svg width="35" height="35" viewBox="0 0 24 24" fill="currentColor">
+          <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+      </svg>
+  </a>
+ 
+</body>
+</html>
